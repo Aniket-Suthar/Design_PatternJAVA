@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ABSTRACT_factory_METHOD/ABSTRACT_factory_METHOD.iml" filepath="$PROJECT_DIR$/ABSTRACT_factory_METHOD/ABSTRACT_factory_METHOD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BASICS/BASICS.iml" filepath="$PROJECT_DIR$/BASICS/BASICS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BUILDER_CLASS_METHOD/BUILDER_CLASS_METHOD.iml" filepath="$PROJECT_DIR$/BUILDER_CLASS_METHOD/BUILDER_CLASS_METHOD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DESIGN_PATTERN_NEW.iml" filepath="$PROJECT_DIR$/.idea/DESIGN_PATTERN_NEW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FACTORY_METHOD/FACTORY_METHOD.iml" filepath="$PROJECT_DIR$/FACTORY_METHOD/FACTORY_METHOD.iml" />
+    </modules>
+  </component>
+</project>
