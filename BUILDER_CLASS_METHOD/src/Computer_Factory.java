@@ -11,6 +11,9 @@ class HardwareEngineer {
     }
 
     public void constructComputer() {
+        // to make user friendly or to take user input from the user
+        // we can add the scanner class here
+
         computerBuilder.createNewComputer();
         computerBuilder.configure_Device_Driver();
         computerBuilder.configure_Monitor_Size();

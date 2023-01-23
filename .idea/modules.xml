@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/BUILDER_CLASS_METHOD/BUILDER_CLASS_METHOD.iml" filepath="$PROJECT_DIR$/BUILDER_CLASS_METHOD/BUILDER_CLASS_METHOD.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DESIGN_PATTERN_NEW.iml" filepath="$PROJECT_DIR$/.idea/DESIGN_PATTERN_NEW.iml" />
       <module fileurl="file://$PROJECT_DIR$/FACTORY_METHOD/FACTORY_METHOD.iml" filepath="$PROJECT_DIR$/FACTORY_METHOD/FACTORY_METHOD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTOYPE  METHOD/PROTOYPE  METHOD.iml" filepath="$PROJECT_DIR$/PROTOYPE  METHOD/PROTOYPE  METHOD.iml" />
     </modules>
   </component>
 </project>
