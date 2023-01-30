@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class owner {
     protected String name;
     protected int MobileNo;
@@ -59,12 +62,10 @@ class House implements Cloneable {
 
     @Override
     public String toString() {
-        return "The house's size is : " + this.area + " The price of house is : " + this.price;
+        return "The house's size is : " + this.area + " The price of house is : " + this.price + on.toString();
     }
 
-    //    abstract void getprice();
-//
-//    abstract void getHouseSize();
+
 
     public House clone() {
         House clone = null;
@@ -98,29 +99,52 @@ class TwoBHKhouse extends House {
         return paintingcost;
     }
 
-    //@Override
-//    public String toString() {
-//        return
+    @Override
+    public String toString() {
+        return super.toString() + "The painting cost is : " + this.paintingcost;
+    }
 }
 
 
+class HouseStore{
+    static Map<String,House> houses = new HashMap<String,House>();
+
+    static{
+        owner o3=new owner("XYZ",856423353);
+        houses.put("2 BHK",new TwoBHKhouse(125, 32445, o3, 500000));
+    }
+    public House getHouse(String type){
+        return houses.get(type);
+    }
+
+    public House getCloneHouse(String type){
+        return houses.get(type).clone();
+    }
+}
 class test2 {
     public static void main(String[] args) {
-        owner o2 = new owner("ABC", 995468587);
-        House h1 = new House(124, 233333, o2);
+//        owner o2 = new owner("ABC", 995468587);
+//        House h1 = new House(124, 233333, o2);
+//
+//        House h2 = h1.clone();
+//
+//        System.out.println("Original : " + h1);
+//        System.out.println("CLoned : " + h2);
+//
+//        System.out.println("Changed Data:");
+//
+//        h2.setPrice(3434323);
+//        h2.on.setName("New ABC");
+//
+//        System.out.println("Original : " + h1);
+//        System.out.println("CLoned : " + h2);
+//
+//        TwoBHKhouse t1 = new TwoBHKhouse(125, 32445, o2, 500000);
+//        System.out.println("2 BHK : " + t1);
 
-        House h2 = h1.clone();
-
-        System.out.println("Original : " + h1);
-        System.out.println("CLoned : " + h2);
-
-        System.out.println("Changed Data:");
-
-        h2.setPrice(3434323);
-        h2.on.setName("New ABC");
-
-        System.out.println("Original : " + h1);
-        System.out.println("CLoned : " + h2);
-
+        HouseStore h1 = new HouseStore();
+        h1.getHouse("2 BHK");
+        System.out.println(h1);
     }
+
 }
