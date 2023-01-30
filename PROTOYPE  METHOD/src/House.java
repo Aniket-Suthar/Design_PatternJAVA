@@ -62,7 +62,7 @@ class House implements Cloneable {
 
     @Override
     public String toString() {
-        return "The house's size is : " + this.area + " The price of house is : " + this.price + on.toString();
+        return "The house's size is : " + this.area + " sq metres " + " The price of house is : " + this.price + on.toString();
     }
 
 
@@ -101,7 +101,7 @@ class TwoBHKhouse extends House {
 
     @Override
     public String toString() {
-        return super.toString() + "The painting cost is : " + this.paintingcost;
+        return super.toString() + " The Painting cost is : " + this.paintingcost;
     }
 }
 
@@ -110,19 +110,25 @@ class HouseStore{
     static Map<String,House> houses = new HashMap<String,House>();
 
     static{
-        owner o3=new owner("XYZ",856423353);
-        houses.put("2 BHK",new TwoBHKhouse(125, 32445, o3, 500000));
+        owner o3=new owner("NEW XYZ",856423353);
+        owner o4=new owner("New ABC",9956334);
+
+        houses.put("3 BHK",new TwoBHKhouse(222,324565,o4,4565465));
+        houses.put("2 BHK",new TwoBHKhouse(125, 32445, o3, 400000));
     }
-    public House getHouse(String type){
+    public static House getHouse(String type){
         return houses.get(type);
     }
 
-    public House getCloneHouse(String type){
+    public static House getCloneHouse(String type){
         return houses.get(type).clone();
     }
 }
 class test2 {
     public static void main(String[] args) {
+
+        //EXPLICIT IMPLEMENTATION
+
 //        owner o2 = new owner("ABC", 995468587);
 //        House h1 = new House(124, 233333, o2);
 //
@@ -142,9 +148,16 @@ class test2 {
 //        TwoBHKhouse t1 = new TwoBHKhouse(125, 32445, o2, 500000);
 //        System.out.println("2 BHK : " + t1);
 
-        HouseStore h1 = new HouseStore();
-        h1.getHouse("2 BHK");
-        System.out.println(h1);
+
+        //MAKING HOUSE USING REGISTRY METHOD USING MAPS
+        System.out.println(HouseStore.getHouse("2 BHK"));
+
+        System.out.println(HouseStore.getHouse("3 BHK"));
+
+        System.out.println(HouseStore.getCloneHouse("2 BHK"));
+
+        System.out.println(HouseStore.getCloneHouse("3 BHK"));
+
     }
 
 }
