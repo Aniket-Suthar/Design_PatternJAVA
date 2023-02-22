@@ -1,0 +1,6 @@
+customer-1  cust1@gmail.com   	cust-7      abc@gmail.com
+customer-2  cust2@gmail.com		cust-8      abc@gmail.com		
+customer-3  cust3@gmail.com		cust-9      abc@gmail.com
+customer-4  cust4@gmail.com		cust-10     abc@gmail.com	
+customer-5  cust5@gmail.com		cust-11     abc@gmail.com
+customer-6  cust6@gmail.com		cust-12     abc@gmail.com
